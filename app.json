@@ -1,0 +1,36 @@
+{
+    "name": "UD_MD",
+    "description": "UD MD WHATSAPP BOT USING BAILEYS",
+    "logo": "https://github.com/Um4r719.png",
+    "keywords": ["bot"],
+    "success_url": "/",
+  
+      "stack": "container",
+    "env": {
+      "SESSION_ID": {
+        "description": "Put the session-id here.",
+        "required": true,
+        "value": ""
+      },  
+      
+      "ALIVE_IMG": {
+        "description": "paste your image url if you don't have you can use this public url.",
+        "required": false,
+        "value": ""
+      }, 
+    
+      "READ_MESSAGE": {
+        "description": "Make it true if you want bot read your all sms just now.",
+        "required": true,
+        "value": "false"
+      }
+  
+  },
+  
+       "buildpacks": [
+          {
+              "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+          }
+       ],
+    "stack": "heroku-24"
+  }
