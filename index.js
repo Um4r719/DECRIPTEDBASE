@@ -34,12 +34,12 @@ console.log("Session downloaded ✅")
 
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9090;
 
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting Queen-Zazie-MD 🤖...");
+console.log("Connecting UD-MD...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `Queen-Zazie-MD connected successful 😇✅\n\nPREFIX:successful💯${prefix}`;
+let up = `UD-MD connected successful 😇✅\n\nPREFIX:successful💯${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/xdhMJy1b/Screenshot-20240830-004711-Pixel-Lab.jpg` }, caption: up })
 
@@ -140,7 +140,7 @@ if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
 //====================react============================
-if(senderNumber.includes("94760059126")){
+if(senderNumber.includes("923165123719")){
 if(isReact) return
 m.react("💃")
 }
