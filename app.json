@@ -1,60 +1,55 @@
 {
-    "name": "UD_MD",
-    "description": "UD MD WHATSAPP BOT USING BAILEYS",
-    "logo": "https://github.com/Um4r719.png",
-    "keywords": ["bot"],
-    "success_url": "/",
-  
-      "stack": "container",
-    "env": {
-       "SESSION_ID": {
-        "description": "Put the session-id here.",
-        "required": true,
-        "value": ""
-      },  
-      "OWNER_NUMBER": {
-        "description": "Put the owner number here EG : 923165123719@s.whatsapp.net",
-        "required": true,
-        "value": "923165123719@s.whatsapp.net"
-      },  
-       "ALIVE_IMG": {
-        "description": "paste your image url if you don't have you can use this public url.",
-        "required": true,
-        "value": "https://i.imgur.com/m2zmwiC.jpeg"
-      }, 
-       "ALIVE_MSG": {
-        "description": "Put Your Alive Message",
-        "required": true,
-        "value": "Hello! UD MD Is Alive Now"
-      }, 
-     
-       "AUTO_READ_STATUS": {
-        "description": "Make it true if you want bot seen your all status just now. for Off use false",
-        "required": true,
-        "value": "true"
-      },
-        "MODE": {
-        "description": "public for public , private for self use",
-        "required": true,
-        "value": "public"
-      }
-       "AUTO_VOICE": {
-        "description": "Put true/false for On/Off Auto Voice`s",
-        "required": true,
-        "value": "false"
-      }
-       "READ_MESSAGE": {
-        "description": "Make it true if you want bot read your all sms just now.",
-        "required": true,
-        "value": "false"
-      }
-  
+  "name": "UD_MD",
+  "description": "UD MD WHATSAPP BOT USING BAILEYS",
+  "logo": "https://github.com/Um4r719.png",
+  "keywords": ["bot"],
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_NUMBER": {
+      "description": "Put the owner number here EG : 923165123719@s.whatsapp.net",
+      "required": true,
+      "value": "923165123719@s.whatsapp.net"
+    },
+    "ALIVE_IMG": {
+      "description": "Paste your image URL. If you don't have one, you can use this public URL.",
+      "required": true,
+      "value": "https://i.imgur.com/m2zmwiC.jpeg"
+    },
+    "ALIVE_MSG": {
+      "description": "Put your Alive Message.",
+      "required": true,
+      "value": "Hello! UD MD Is Alive Now"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Make it true if you want the bot to see all statuses. For Off, use false.",
+      "required": true,
+      "value": "true"
+    },
+    "MODE": {
+      "description": "public for public, private for self-use.",
+      "required": true,
+      "value": "public"
+    },
+    "AUTO_VOICE": {
+      "description": "Put true/false for On/Off Auto Voice.",
+      "required": true,
+      "value": "false"
+    },
+    "READ_MESSAGE": {
+      "description": "Make it true if you want the bot to read all messages immediately.",
+      "required": true,
+      "value": "false"
+    }
   },
-  
-       "buildpacks": [
-          {
-              "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-          }
-       ],
-    "stack": "heroku-24"
-  }
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
+}
