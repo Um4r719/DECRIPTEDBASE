@@ -4,7 +4,6 @@
   "logo": "https://github.com/Um4r719.png",
   "keywords": ["bot"],
   "success_url": "/",
-  "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
