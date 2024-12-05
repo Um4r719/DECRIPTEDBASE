@@ -13,6 +13,6 @@ ALIVE_MSG: process.env.ALIVE_MSG || "🤖🔰 Hi UD-MD Is Online Now 💻\n*💻
 READ_MESSAGE: process.env.READ_MESSAGE || "true", // Added auto-read configuration
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
-AUTO_VOICE: "false",
+AUTO_VOICE: "true",
 ELEVENLABS_API_KEY: 'sk_b71c6e84020a98ecee7af1b3b122700ac223fab74da4857c',
 };
