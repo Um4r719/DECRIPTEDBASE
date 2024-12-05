@@ -49,7 +49,7 @@ _*☘ Select the number corresponding to the category you want*_
     `;
 
     const response = await client.sendMessage(context.from, {
-      document: { url: "https://i.imgur.com/IfaDdJf.jpeg" },
+      document: { url: "https://qu.ax/NvQyA.jpg" },
       fileName: "UD MD BOT",
       mimetype: "application/xml",
       fileLength: 1000000000000,
