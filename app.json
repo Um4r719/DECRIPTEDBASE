@@ -7,19 +7,43 @@
   
       "stack": "container",
     "env": {
-      "SESSION_ID": {
+       "SESSION_ID": {
         "description": "Put the session-id here.",
         "required": true,
         "value": ""
       },  
-      
-      "ALIVE_IMG": {
+      "OWNER_NUMBER": {
+        "description": "Put the owner number here EG : 923165123719@s.whatsapp.net",
+        "required": true,
+        "value": "923165123719@s.whatsapp.net"
+      },  
+       "ALIVE_IMG": {
         "description": "paste your image url if you don't have you can use this public url.",
-        "required": false,
-        "value": ""
+        "required": true,
+        "value": "https://i.imgur.com/m2zmwiC.jpeg"
       }, 
-    
-      "READ_MESSAGE": {
+       "ALIVE_MSG": {
+        "description": "Put Your Alive Message",
+        "required": true,
+        "value": "Hello! UD MD Is Alive Now"
+      }, 
+     
+       "AUTO_READ_STATUS": {
+        "description": "Make it true if you want bot seen your all status just now. for Off use false",
+        "required": true,
+        "value": "true"
+      },
+        "MODE": {
+        "description": "public for public , private for self use",
+        "required": true,
+        "value": "public"
+      }
+       "AUTO_VOICE": {
+        "description": "Put true/false for On/Off Auto Voice`s",
+        "required": true,
+        "value": "false"
+      }
+       "READ_MESSAGE": {
         "description": "Make it true if you want bot read your all sms just now.",
         "required": true,
         "value": "false"
