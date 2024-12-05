@@ -1,7 +1,7 @@
 const { cmd, commands } = require('../command');
 const fg = require('api-dylux');
 const yts = require('yt-search');
-const pdfUrl = 'https://i.imgur.com/m2zmwiC.jpeg';
+const pdfUrl = 'https://qu.ax/NvQyA.jpg';
 
 // Function to extract the video ID from youtu.be or YouTube links
 function extractYouTubeId(url) {
