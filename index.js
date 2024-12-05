@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/Umar_Session/creds.json', data, () => {
-console.log("Session downloaded ✅")
+console.log("Umar Session downloaded ✅")
 })})}
 
 const express = require("express");
@@ -40,7 +40,7 @@ const port = process.env.PORT || 9090;
 
 async function connectToWA() {
 console.log("UD MD Bot Is Connecting To WhatsApp");
-const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/Umar-Session/')
+const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/Umar_Session/')
 var { version } = await fetchLatestBaileysVersion()
 
 const conn = makeWASocket({
@@ -71,7 +71,7 @@ console.log('UD MD Bot Connected To WhatsApp ✅')
 
 let up = `UD MD Connected Successful\n\nPREFIX:${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/m2zmwiC.jpeg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://qu.ax/NvQyA.jpg` }, caption: up })
 
 }
 })
