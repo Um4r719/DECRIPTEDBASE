@@ -10,7 +10,6 @@ const {
 
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions');
 const fs = require('fs');
-const someModule = require('some-module');
 const P = require('pino');
 const config = require('./config');
 const qrcode = require('qrcode-terminal');
