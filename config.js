@@ -14,5 +14,5 @@ READ_MESSAGE: process.env.READ_MESSAGE || "true", // Added auto-read configurati
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
 AUTO_VOICE: "false",
-ELEVENLABS_API_KEY: 'sk_4669df1ac80b92a39528954725c4ff916fbfc7e3a4d75b22',
+ELEVENLABS_API_KEY: 'sk_b71c6e84020a98ecee7af1b3b122700ac223fab74da4857c',
 };
