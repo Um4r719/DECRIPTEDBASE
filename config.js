@@ -8,7 +8,7 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "enter your session",  
 OWNER_NUMBER: '923165123719@s.whatsapp.net',
-ALIVE_IMG: process.env.ALIVE_IMG || "https://qu.ax/NvQyA.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://imgur.com/NxLHiOw.jpeg",
 ALIVE_MSG: process.env.ALIVE_MSG || "🤖🔰 Hi UD-MD Is Online Now 💻\n*💻 Owner* - UMAR REHMAN\n\n*💻 Owner Number* +923165123719\n\n_Type .menu to get the command menu._",
 READ_MESSAGE: process.env.READ_MESSAGE || "true", // Added auto-read configuration
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
