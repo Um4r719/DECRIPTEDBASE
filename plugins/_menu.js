@@ -49,7 +49,7 @@ _*☘ Select the number corresponding to the category you want*_
     `;
 
     const response = await client.sendMessage(context.from, {
-      document: { url: "https://qu.ax/NvQyA.jpg" },
+      document: { url: "https://imgur.com/NxLHiOw.jpeg" },
       fileName: "UD MD BOT",
       mimetype: "application/xml",
       fileLength: 1000000000000,
@@ -117,7 +117,7 @@ _*☘ Select the number corresponding to the category you want*_
         }
 
         await client.sendMessage(chatId, {
-          document: { url: "https://qu.ax/NvQyA.jpg" },
+          document: { url: "https://imgur.com/NxLHiOw.jpeg" },
           fileName: "UD MD BOT",
           mimetype: "application/xml",
           fileLength: 1000000000000,
