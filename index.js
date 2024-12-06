@@ -20,7 +20,9 @@ const {
     fetchJson
 } = require('./lib/functions');
 
+const fetch = require('node-fetch');
 const fs = require('fs');
+const mega = require('mega');
 const P = require('pino');
 const config = require('./config');
 const qrcode = require('qrcode-terminal');
@@ -34,6 +36,14 @@ const port = process.env.PORT || 9090;
 // Prefix and owner details
 const prefix = '.';
 const ownerNumber = ['923165123719'];
+
+// Use the mega package to fetch the file
+const client = mega({ email: 'permaunban@gmail.com', password: 'umar165123719.' });
+const file = client.download('https://mega.nz/file/<file-id>#<file-key>', '/path/to/save/file');
+
+file.on('end', () => {
+  console.log('Download complete!');
+});
 
 // Session auth management
 if (!fs.existsSync(__dirname + '/CONNECTION/creds.json')) {
